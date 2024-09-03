@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #4A00E0, #8E2DE2);
+
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.gato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Para que a informação se organize de forma responsiva */
+}
+
+.gato img {
+    border-radius: 20px;  /* Bordas arredondadas */
+    width: 100%;  /* Faz a imagem ocupar a largura completa do container */
+    max-width: 150px;  
+    height: auto;  /* Mantém a proporção da imagem */
+    object-fit: cover; 
+    margin-right: 20px;
+    flex-shrink: 0; /* Impede que a imagem encolha além do tamanho definido */
+}
+
+.info {
+    max-width: 800px;
+    flex: 1; /* Faz a descrição ocupar o espaço restante */
+}
+
+.info h2 {
+    font-size: 2em;
+    font-family: 'Impact';
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.divider {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.divider img {
+    background-size: cover;
+    max-width: 1000px;
+}
